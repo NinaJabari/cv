@@ -91,6 +91,6 @@
     	fill: #e64980;
 	}
 
-	g.Header {
-    	stroke: #e64980;
+	g.Header, .percent svg circle:nth-child(2) {
+    	stroke: #e64980 !important;
 	}
