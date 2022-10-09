@@ -1562,7 +1562,7 @@ li.active_filter:after {
     left: 20px;
     bottom: 20px;
     right: 20px;
-    background-color: #fff;
+    background-color: #ffffff8f;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.3s ease-in-out;
     transform: scaleY(0);
@@ -1580,6 +1580,7 @@ li.active_filter:after {
 }
 
 .portfolio_sec .project_content:hover .info h3,
+.portfolio_sec .project_content:hover .info .description,
 .portfolio_sec .project_content:hover .info p {
     transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -1608,6 +1609,17 @@ li.active_filter:after {
     opacity: 0;
     margin-left: 30px;
 }
+.portfolio_sec .item .info .description {
+    color: #272727;
+    margin-top: 24px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 .portfolio_sec .item .info p {
     font-size: 12px;
@@ -1624,6 +1636,12 @@ li.active_filter:after {
     position: absolute;
     bottom: 15px;
     left: 30px;
+}
+
+.portfolio_sec .item .info .info-text{
+    padding: 34px;
+    color: #313131;
+    cursor: default;
 }
 
 .portfolio_sec .info .icon {
@@ -2518,4 +2536,25 @@ color: #282828;
 font-size: 14px;
 }
 
+.mfp-content section.portfolio_sec{
+    background-color: transparent;
+}
+
+.mfp-content section.pt-page .scroll__content{
+    box-shadow: none;
+}
+
+.mfp-content .sec_title:after {
+    background: none;
+}
+
+.mfp-content section.pt-page .scroll__content{
+    max-width: 1200px;
+}
+.mfp-content section .sec__content{
+    padding-top: 20px;
+}
+.mfp-content .project-text{
+    margin-bottom: 50px;
+}
 /* end circle box */
