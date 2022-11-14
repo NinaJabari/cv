@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: #9b9b9b;
+    color: #575757;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -1597,7 +1597,7 @@ li.active_filter:after {
 }
 
 .portfolio_sec .item .info h3 {
-    color: #272727;
+    color: #404040;
     font-weight: 700;
     font-size: 22px;
     margin-top: 24px;
@@ -1608,6 +1608,8 @@ li.active_filter:after {
     transform: translateY(10px);
     opacity: 0;
     margin-left: 30px;
+    margin-right: 30px;
+    line-height: 27px;
 }
 .portfolio_sec .item .info .description {
     color: #272727;
@@ -2558,3 +2560,7 @@ font-size: 14px;
     margin-bottom: 50px;
 }
 /* end circle box */
+
+.project_info li {
+    color: #393939;
+  }
