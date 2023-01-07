@@ -2019,7 +2019,6 @@ input.form-control {
     padding-top: 15px;
     position: absolute;
     bottom: -50px;
-    text-transform: capitalize;
 }
 
 .msg_error p {
