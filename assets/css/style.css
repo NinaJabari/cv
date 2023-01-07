@@ -2506,8 +2506,12 @@ ul.share-post {
 }
 .box .percent svg circle:nth-child(2)
 {
-  stroke-dashoffset:31.5;
+  stroke-dashoffset:60;
   stroke:#f41f03;
+}
+.box.persian-lang .percent svg circle:nth-child(2)
+{
+  stroke-dashoffset:0;
 }
 .box .percent .num
 {
