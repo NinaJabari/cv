@@ -258,6 +258,17 @@ section:not(.pt-page) .sec_title {
     position: relative;
 }
 
+@media (max-width:768px) {
+    .mfp-content .sec_title{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mfp-content section .sec__content{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
 .sec_title h2:after {
     content: "";
     position: absolute;
@@ -1190,6 +1201,7 @@ body.small_menu .menu_list a:after {
     background: #fafafa;
     border: 1px solid #d6d6d6;
     border-radius: 5px;
+    min-height: 200px;
 }
 
 .testi-content:after {
@@ -1611,6 +1623,26 @@ li.active_filter:after {
     margin-right: 30px;
     line-height: 27px;
 }
+
+@media(min-width:769px) and (max-width:1300px){
+    .portfolio_sec .item .info .description{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    .portfolio_sec .item .info h3 {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: normal;
+        text-align: center;
+    }
+    .portfolio_sec .item .info .description{
+        display: none;
+    }
+}
 .portfolio_sec .item .info .description {
     color: #272727;
     margin-top: 24px;
@@ -1774,6 +1806,15 @@ li.active_filter:after {
     top: 20px;
     right: 20px;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:768px) {
+    .my-mfp-zoom-in button.mfp-close{
+        width: 25px;
+        height: 25px;
+        line-height: 20px;
+        font-size: 20px;
+    }
 }
 
 .zoom-anim-dialog iframe {
@@ -2535,7 +2576,7 @@ ul.share-post {
 }
 .box .text
 {
-  padding 10px 0 0;
+  padding: 10px 0 0;
   font-family: 'Poppins', sans-serif;
 font-weight: 700;
 color: #282828;

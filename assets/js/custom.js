@@ -88,20 +88,31 @@ jQuery(function ($) {
     }
     set_height(".full-height");
 
+    /*--------------------------------
+        04. Menu
+    ----------------------------------*/
+
     function mob_menu_toggle(){
         $(".mob-menu .navbar-toggle").toggleClass("collapsed");
         $('.mob-menu-overlay').fadeToggle();
         $('.side-right').toggleClass('right-zero');
     }
 
+    function mob_menu_close(){
+        $(".mob-menu .navbar-toggle").addClass("collapsed");
+        $('.mob-menu-overlay').fadeOut();
+        $('.side-right').removeClass('right-zero');
+    }
 
-    /*--------------------------------
-        04. Menu
-    ----------------------------------*/
+    $('.menu-item a').on('click', function (){
+        mob_menu_close();
+    });
 
     $('.mob-menu .navbar-toggle,.mob-menu-overlay').on('click', function (){
         mob_menu_toggle();
     });
+
+    
 
     if($(".big_menu .home__menu").length){
         var menuItemInnerHtml = '<a href="#home"><svg viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ><path id="arrow-right-2" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path></svg></a>';
